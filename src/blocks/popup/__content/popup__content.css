@@ -1,0 +1,19 @@
+.popup__content {
+	min-height: 330px;
+	position: relative;
+	box-sizing: border-box;
+	background-size: cover;
+	display: flex;
+	height: auto;
+	max-height: 75vh;
+	max-width: 75vw;
+	width: auto;
+}
+
+@media screen and (max-width: 900px) {
+	.popup__content {
+		width: 100%;
+		max-width: calc(100% - 20px);
+		margin-top: 40px;
+	}
+}

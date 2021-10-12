@@ -1,0 +1,14 @@
+.about__photo {
+	border-radius: 50%;
+	grid-area: photo;
+	margin: auto;
+	width: 400px;
+}
+
+@media screen and (max-width: 880px) {
+	.about__photo {
+		max-width: 400px;
+		min-width: 200px;
+		width: 100%;
+	}
+}

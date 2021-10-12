@@ -1,0 +1,9 @@
+.contact__input {
+	border: none;
+	border-bottom: 1px solid #fff;
+	padding: 10px;
+}
+
+.contact__input::placeholder {
+	font-family: 'WorkSans', sans-serif;
+}

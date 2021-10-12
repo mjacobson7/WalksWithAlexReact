@@ -1,0 +1,4 @@
+.intro__logo {
+	width: 100%;
+	grid-area: logo;
+}

@@ -1,0 +1,6 @@
+.header__mobile-nav-container_active {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 40px;
+}

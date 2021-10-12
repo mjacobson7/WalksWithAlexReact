@@ -1,0 +1,9 @@
+.header__mobile-nav-container {
+	position: fixed;
+	background-color: #fff;
+	left: 0;
+	right: 0;
+	top: 68px;
+	bottom: 0;
+	z-index: 1;
+}

@@ -1,0 +1,9 @@
+.photo-collage__item_row-span-2 {
+	grid-row-start: span 2;
+}
+
+@media screen and (max-width: 950px) {
+	.photo-collage__item_row-span-2 {
+		grid-row-start: unset;
+	}
+}

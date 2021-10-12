@@ -1,0 +1,35 @@
+.popup__arrow {
+	font-size: 60px;
+	color: #fff;
+	cursor: pointer;
+	transition: color 0.3s ease;
+	z-index: 1;
+	margin-top: 40px;
+	padding: 5px;
+}
+
+.popup__arrow:first-child {
+	transform: translateX(50px);
+}
+
+.popup__arrow:last-child {
+	transform: translateX(-50px);
+}
+
+.popup__arrow:hover {
+	color: #9e9e9e;
+}
+
+@media screen and (max-width: 600px) {
+	.popup__arrow {
+		font-size: 40px;
+	}
+
+	.popup__arrow:first-child {
+		transform: translateX(40px);
+	}
+
+	.popup__arrow:last-child {
+		transform: translateX(-40px);
+	}
+}

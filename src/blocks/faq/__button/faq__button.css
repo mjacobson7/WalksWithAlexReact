@@ -1,0 +1,16 @@
+.faq__button {
+	width: calc(100% - 30px);
+	padding: 15px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	background-color: #e5e5e5;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	line-height: 25px;
+	font-size: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-top: 30px;
+}

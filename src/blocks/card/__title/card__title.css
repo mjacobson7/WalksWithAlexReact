@@ -1,0 +1,12 @@
+.card__title {
+	font-family: 'WorkSans', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	color: #3a3b3d;
+}
+
+@media screen and (max-width: 600px) {
+	.card__title {
+		margin: 10px 0;
+	}
+}

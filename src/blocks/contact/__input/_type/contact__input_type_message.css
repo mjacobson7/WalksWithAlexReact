@@ -1,0 +1,4 @@
+.contact__input_type_message {
+	grid-area: message;
+	resize: none;
+}

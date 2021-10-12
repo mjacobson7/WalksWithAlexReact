@@ -1,0 +1,11 @@
+.faq__item {
+	width: calc(100% - 30px);
+	margin: auto;
+	border: 2px solid #e5e5e5;
+	border-top: none;
+	box-sizing: border-box;
+	visibility: hidden;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.35s ease, visibility 0s 0.35s;
+}

@@ -1,0 +1,20 @@
+.contact {
+	max-width: 800px;
+	width: 90%;
+	background-color: #dedede;
+	display: grid;
+	grid-template-areas: 'name email' 'message message' 'submit submit';
+	gap: 20px;
+	padding: 20px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+	.contact {
+		grid-template-areas: 'name' 'email' 'message' 'submit';
+		width: unset;
+		border-radius: 0;
+		padding: 10px;
+	}
+}

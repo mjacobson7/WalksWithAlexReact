@@ -1,0 +1,22 @@
+.intro {
+	display: grid;
+	grid-template-areas: 'title . logo logo logo logo' 'subtitle . logo logo logo logo' 'button social logo logo logo logo';
+	max-width: 900px;
+	width: calc(100% - 40px);
+	margin: auto;
+	padding: 100px 0 150px 0;
+}
+
+@media screen and (max-width: 680px) {
+	.intro {
+		gap: 10px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.intro {
+		text-align: center;
+		grid-template-areas: 'title' 'subtitle' 'logo' 'button';
+		padding-bottom: 150px;
+	}
+}

@@ -1,0 +1,7 @@
+.card__link {
+	color: #3a3b3d;
+	text-decoration: underline;
+	cursor: pointer;
+	border: none;
+	background-color: unset;
+}

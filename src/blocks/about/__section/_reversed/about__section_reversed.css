@@ -1,0 +1,11 @@
+.about__section_reversed {
+	grid-template-areas: 'title title photo' 'text text photo' 'button button photo';
+}
+
+@media screen and (max-width: 800px) {
+	.about__section_reversed {
+		text-align: center;
+		grid-template-areas: 'photo' 'title' 'text' 'button';
+		gap: 30px;
+	}
+}

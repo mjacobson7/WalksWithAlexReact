@@ -1,0 +1,15 @@
+.intro__subtitle {
+	color: #3a3b3d;
+	font-size: 31px;
+	font-family: 'WorkSans', sans-serif;
+	font-weight: 200;
+	margin: 0;
+	grid-area: subtitle;
+	align-self: center;
+}
+
+@media screen and (max-width: 850px) {
+	.intro__subtitle {
+		font-size: 20px;
+	}
+}

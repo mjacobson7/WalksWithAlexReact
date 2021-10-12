@@ -1,0 +1,14 @@
+.footer__subtitle {
+	font-family: 'PlayfairDisplay', sans-serif;
+	color: #3a3b3d;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+	.footer__subtitle {
+		margin-bottom: 0;
+	}
+}

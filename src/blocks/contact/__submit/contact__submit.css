@@ -1,0 +1,20 @@
+.contact__submit {
+	grid-area: submit;
+	border: 2px solid #2e612e;
+	background: transparent;
+	padding: 15px 35px;
+	margin: 0 auto;
+	cursor: pointer;
+	border-radius: 30px;
+	transition: color 0.2s ease, background-color 0.2s ease;
+	color: #2e612e;
+	text-transform: uppercase;
+	font-family: 'WorkSans', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.contact__submit:hover {
+	color: #fff;
+	background-color: #2e612e;
+}

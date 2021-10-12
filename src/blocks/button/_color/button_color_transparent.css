@@ -1,0 +1,16 @@
+.button_color_transparent {
+	text-align: center;
+	border-radius: 50px;
+	background-color: transparent;
+	/* padding: 15px 35px; */
+	color: #2e612e;
+	font-weight: 600;
+	font-size: 20px;
+	max-width: unset;
+	border: 2px solid #2e612e;
+}
+
+.button_color_transparent:hover {
+	color: #fff;
+	background-color: #2e612e;
+}

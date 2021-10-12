@@ -1,0 +1,18 @@
+.services__title {
+	font-size: 62px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 150px 0 0;
+}
+
+@media screen and (max-width: 775px) {
+	.services__title {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.services__title {
+		margin-top: 150px;
+	}
+}

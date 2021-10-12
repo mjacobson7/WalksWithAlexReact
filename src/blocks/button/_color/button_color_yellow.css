@@ -1,0 +1,11 @@
+.button_color_yellow {
+	background-color: #f8b423;
+	color: #3a3b3d;
+	border: none;
+}
+
+.button_color_yellow:hover {
+	color: #fff;
+	background-color: #2e612e;
+	opacity: 1;
+}

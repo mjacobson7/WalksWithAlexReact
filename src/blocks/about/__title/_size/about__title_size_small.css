@@ -1,0 +1,10 @@
+.about__title_size_small {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	.about__title_size_small {
+		margin: 0;
+	}
+}

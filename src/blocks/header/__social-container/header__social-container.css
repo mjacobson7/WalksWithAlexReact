@@ -1,0 +1,9 @@
+.header__social-container {
+	margin-left: 0;
+}
+
+@media screen and (max-width: 450px) {
+	.header__social-container {
+		margin: 10px 0 0 10px;
+	}
+}

@@ -1,0 +1,14 @@
+.intro__btn {
+	grid-area: button;
+	align-self: flex-start;
+}
+
+/* .intro__btn:hover {
+	background-color: #8896cd;
+} */
+
+@media screen and (max-width: 600px) {
+	.intro__btn {
+		max-width: 100% !important;
+	}
+}

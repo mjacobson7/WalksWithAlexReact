@@ -1,0 +1,11 @@
+.about__btn {
+	grid-area: button;
+	line-height: 25px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	.about__btn {
+		max-width: 100% !important;
+	}
+}

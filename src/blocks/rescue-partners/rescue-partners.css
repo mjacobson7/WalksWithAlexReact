@@ -1,0 +1,15 @@
+.rescue-partners {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px auto 40px;
+	text-decoration: none;
+	max-width: 1400px;
+}
+
+@media screen and (max-width: 800px) {
+	.rescue-partners {
+		flex-direction: column;
+		align-items: center;
+	}
+}

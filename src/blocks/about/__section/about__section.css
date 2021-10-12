@@ -1,0 +1,17 @@
+.about__section {
+	display: grid;
+	grid-template-areas: 'photo title title' 'photo text text' 'photo button button';
+	gap: 0 20px;
+	max-width: 900px;
+	width: calc(100% - 80px);
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+	.about__section {
+		text-align: center;
+		grid-template-areas: 'photo' 'title' 'text' 'button';
+		gap: 30px;
+	}
+}

@@ -1,0 +1,13 @@
+.about__title {
+	font-size: 62px;
+	text-transform: uppercase;
+	grid-area: title;
+	margin: 0;
+	align-self: flex-end;
+}
+
+@media screen and (max-width: 775px) {
+	.about__title {
+		font-size: 50px;
+	}
+}

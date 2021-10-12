@@ -1,0 +1,22 @@
+.footer__contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+	width: 90%;
+	margin: 70px auto;
+}
+
+@media screen and (max-width: 750px) {
+	.footer__contact-list {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.footer__contact-list {
+		margin-top: 30px;
+	}
+}

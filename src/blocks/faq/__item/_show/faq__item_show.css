@@ -1,0 +1,5 @@
+.faq__item_show {
+	max-height: 500px;
+	visibility: visible;
+	transition: max-height 1s ease;
+}

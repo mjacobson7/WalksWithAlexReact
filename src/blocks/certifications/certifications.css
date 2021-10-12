@@ -1,0 +1,9 @@
+.certifications {
+	padding: 75px 0 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	max-width: 900px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}

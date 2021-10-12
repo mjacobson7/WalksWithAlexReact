@@ -1,0 +1,9 @@
+.header__menu_mobile {
+	align-self: flex-start;
+}
+
+@media screen and (min-width: 1001px) {
+	.header__menu_mobile {
+		display: none;
+	}
+}
