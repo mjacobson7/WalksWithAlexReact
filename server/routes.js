@@ -21,6 +21,6 @@ module.exports = (app) => {
 		};
 		sgMail.send(msg);
 
-		res.status(200).json(req.body);
+		res.sendStatus(200);
 	});
 };
