@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import socialFacebook from '../images/social_facebook.png';
 import socialInstagram from '../images/social_instagram.png';
@@ -10,9 +10,9 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<div className='header__logo-container'>
-				<a className='header__title heading-text' href='./index.html'>
+				<Link className='header__title heading-text' to='/'>
 					Walks With Alex
-				</a>
+				</Link>
 				<div className='header__social-container'>
 					<a
 						className='header__social-link'

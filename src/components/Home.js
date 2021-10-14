@@ -60,34 +60,37 @@ const Home = () => {
 						<img src={walk30Image} alt='' className='card__img' />
 						<h3 className='card__title'>Walk - 30 minutes</h3>
 
-						<Link
-							to='https://forms.gle/yyQpGQHzP333hJDc7'
+						<a
+							href='https://forms.gle/yyQpGQHzP333hJDc7'
 							target='_blank'
-							className='card__btn button button_color_yellow'>
+							className='card__btn button button_color_yellow'
+							rel='noreferrer'>
 							Book Now
-						</Link>
+						</a>
 					</li>
 					<li className='card'>
 						<img src={walk60Image} alt='' className='card__img' />
 						<h3 className='card__title'>Walk - 60 minutes</h3>
 
-						<Link
-							to='https://forms.gle/yyQpGQHzP333hJDc7'
+						<a
+							href='https://forms.gle/yyQpGQHzP333hJDc7'
 							target='_blank'
-							className='card__btn button button_color_yellow'>
+							className='card__btn button button_color_yellow'
+							rel='noreferrer'>
 							Book Now
-						</Link>
+						</a>
 					</li>
 					<li className='card'>
 						<img src={boardingImage} alt='' className='card__img' />
 						<h3 className='card__title'>Boarding - Overnight</h3>
 
-						<Link
-							to='https://forms.gle/yyQpGQHzP333hJDc7'
+						<a
+							href='https://forms.gle/yyQpGQHzP333hJDc7'
 							target='_blank'
-							className='card__btn button button_color_yellow'>
+							className='card__btn button button_color_yellow'
+							rel='noreferrer'>
 							Book Now
-						</Link>
+						</a>
 					</li>
 				</ul>
 				<Link to='/services' className='button button_color_transparent'>
