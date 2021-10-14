@@ -3,7 +3,18 @@ import React from 'react';
 const ContactForm = () => {
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
-		return fetch('/contact-us')
+		return fetch('/contact-us', {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				name: e.target.name.value,
+				email: e.target.email.value,
+				message: e.target.message.value,
+			}),
+		})
 			.then((res) => res.json())
 			.then((res) => res);
 	};
@@ -15,6 +26,7 @@ const ContactForm = () => {
 				aria-label='Name'
 				placeholder='Name'
 				type='text'
+				name='name'
 				required
 			/>
 			<input
@@ -22,6 +34,7 @@ const ContactForm = () => {
 				aria-label='Email'
 				placeholder='Email'
 				type='email'
+				name='email'
 				required
 			/>
 			<textarea
