@@ -68,12 +68,13 @@ const Header = () => {
 					to='/faq'>
 					FAQ
 				</NavLink>
-				<NavLink
-					to='mailto:info@walkswithalex.com'
+				<a
+					href='mailto:info@walkswithalex.com'
 					target='_blank'
-					className='header__menu-item button button_color_yellow'>
+					className='header__menu-item button button_color_yellow'
+					rel='noreferrer'>
 					Email Us
-				</NavLink>
+				</a>
 			</nav>
 			<MobileHeaderMenu />
 		</header>

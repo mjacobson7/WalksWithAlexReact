@@ -3,6 +3,13 @@ const secrets = require('./secrets');
 sgMail.setApiKey(secrets.EMAIL_KEY);
 
 module.exports = (app) => {
+	app.post('/login', (req, res) => {
+		const { email, password } = req.body;
+
+		console.log({ email, password });
+		res.status(200).json({});
+	});
+
 	app.post('/contact-us', (req, res) => {
 		const msg = {
 			to: secrets.EMAIL,

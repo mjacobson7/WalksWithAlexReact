@@ -1,15 +1,22 @@
 import Header from './Header';
 import Footer from './Footer';
 
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Services from './Services';
 import Reviews from './Reviews';
 import Rescue from './Rescue';
 import FAQ from './FAQ';
+import Login from './Login';
+import Admin from './Admin';
+import { useEffect, useState } from 'react';
 
 function App() {
+	const [isAuthenticated, setIsAuthenticated] = useState(true);
+
+	useEffect(() => {}, []);
+
 	return (
 		<div className='App'>
 			<Header />
@@ -32,6 +39,15 @@ function App() {
 				<Route exact path='/faq'>
 					<FAQ />
 				</Route>
+				<Route exact path='/login'>
+					<Login />
+				</Route>
+				<Route
+					exact
+					path='/admin'
+					render={() =>
+						isAuthenticated ? <Admin /> : <Redirect to='/' />
+					}></Route>
 			</Switch>
 			<Footer />
 		</div>

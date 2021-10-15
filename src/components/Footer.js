@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import fearFreeImage from '../images/certification_fear_free.webp';
 import iaabcImage from '../images/certification_iaabc.webp';
 import recallerImage from '../images/certification_recaller.webp';
@@ -12,31 +11,32 @@ const Footer = () => {
 		<footer className='footer'>
 			<ul className='certifications'>
 				<li>
-					<Link to='https://fearfreepets.com/' target='_blank'>
+					<a href='https://fearfreepets.com/' target='_blank' rel='noreferrer'>
 						<img src={fearFreeImage} alt='' className='certifications__image' />
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='https://iaabc.org/' target='_blank'>
+					<a href='https://iaabc.org/' target='_blank' rel='noreferrer'>
 						<img src={iaabcImage} alt='' className='certifications__image' />
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='https://recallers.com/' target='_blank'>
+					<a href='https://recallers.com/' target='_blank' rel='noreferrer'>
 						<img src={recallerImage} alt='' className='certifications__image' />
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link
-						to='https://www.redcross.org/take-a-class/first-aid/cat-dog-first-aid'
-						target='_blank'>
+					<a
+						href='https://www.redcross.org/take-a-class/first-aid/cat-dog-first-aid'
+						target='_blank'
+						rel='noreferrer'>
 						<img src={redCrossImage} alt='' className='certifications__image' />
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='https://apdt.com/' target='_blank'>
+					<a href='https://apdt.com/' target='_blank' rel='noreferrer'>
 						<img src={apdtImage} alt='' className='certifications__image' />
-					</Link>
+					</a>
 				</li>
 			</ul>
 			<h2 className='footer__title heading-text'>Contact</h2>
