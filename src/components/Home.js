@@ -7,7 +7,7 @@ import walk60Image from '../images/walk60.webp';
 import boardingImage from '../images/services_boarding.jpeg';
 
 import JennyAlexReviewImage from '../images/jenny_alex_review.png';
-import ShastaReviewImage from '../images/shasta_review.png';
+import ShastaReviewImage from '../images/shasta_review.webp';
 import StaceyJasonReviewImage from '../images/stacey_jason_review.png';
 
 import clients01 from '../images/clients01.png';

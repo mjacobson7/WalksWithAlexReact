@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import JennyAlexImage from '../images/jenny_alex_review.png';
-import ShastaImage from '../images/shasta_review.png';
+import ShastaImage from '../images/shasta_review.webp';
 import StaceyJasonImage from '../images/stacey_jason_review.png';
+import ShaziImage from '../images/review_shazi.webp';
+
 const Reviews = () => {
 	return (
 		<main>
@@ -70,6 +72,24 @@ const Reviews = () => {
 								className='testimonials__author-image'
 							/>
 							<p className='testimonials__author-name'>Stacey + Jason</p>
+						</div>
+					</li>
+					<li className='testimonials__item'>
+						<p className='testimonials__subtitle'>
+							"Loving, attentive, and stimulating care"
+						</p>
+						<p className='testimonials__text'>
+							When you are anxious to leave your dog…but are thrilled to see how
+							excited he is to come here!! Loving, attentive, and stimulating
+							care—thank you!
+						</p>
+						<div className='testimonials__author'>
+							<img
+								src={ShaziImage}
+								alt=''
+								className='testimonials__author-image'
+							/>
+							<p className='testimonials__author-name'>Shazi</p>
 						</div>
 					</li>
 				</ul>
