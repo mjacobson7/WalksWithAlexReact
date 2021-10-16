@@ -10,7 +10,9 @@ import Rescue from './Rescue';
 import FAQ from './FAQ';
 import Login from './Login';
 import Admin from './Admin';
+import Shop from './Shop';
 import { useEffect, useState } from 'react';
+import Product from './Product';
 
 function App() {
 	const [isAuthenticated, setIsAuthenticated] = useState(true);
@@ -38,6 +40,12 @@ function App() {
 				</Route>
 				<Route exact path='/faq'>
 					<FAQ />
+				</Route>
+				<Route exact path='/shop'>
+					<Shop />
+				</Route>
+				<Route exact path='/product/:id'>
+					<Product />
 				</Route>
 				<Route exact path='/login'>
 					<Login />

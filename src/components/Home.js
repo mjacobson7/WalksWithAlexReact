@@ -184,9 +184,9 @@ const Home = () => {
 						</div>
 					</li>
 				</ul>
-				<a href='/reviews.html' className='button button_color_transparent'>
+				<Link to='/reviews' className='button button_color_transparent'>
 					All Reviews
-				</a>
+				</Link>
 			</section>
 		</main>
 	);
