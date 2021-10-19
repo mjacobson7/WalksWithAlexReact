@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,6 +6,14 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const MobileHeaderMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	useEffect(() => {
+		if (isMenuOpen) {
+			document.querySelector('html').style.overflow = 'hidden';
+		} else {
+			document.querySelector('html').style.overflow = 'auto';
+		}
+	}, [isMenuOpen]);
 
 	return (
 		<div className='header__menu header__menu_mobile'>
