@@ -1,10 +1,16 @@
+require('dotenv').config();
 const express = require('express');
-const cors = require('cors');
+const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
+// mongoose.connect('mongodb://localhost:27017/mydb');
+
+mongoose.connect(
+	`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PWD}@cluster0.95ya7.mongodb.net/${process.env.DB_NAME}`
+);
 
 app.use(express.static(__dirname + './../build'));
-app.use(cors());
+
 app.use(
 	express.urlencoded({
 		extended: true,

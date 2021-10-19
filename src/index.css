@@ -130,6 +130,25 @@
 @import url(./blocks/contact/__input/_type/contact__input_type_message.css);
 @import url(./blocks/contact/__submit/contact__submit.css);
 
+/* Shop */
+@import url(./blocks/shop/shop.css);
+@import url(./blocks/shop/__product/shop__product.css);
+@import url(./blocks/shop/__product-image/shop__product-image.css);
+@import url(./blocks/shop/__title/shop__title.css);
+@import url(./blocks/shop/__price/shop__price.css);
+
+/* Product */
+@import url(./blocks/product/product.css);
+@import url(./blocks/product/__image/product__image.css);
+@import url(./blocks/product/__details/product__details.css);
+@import url(./blocks/product/__title/product__title.css);
+@import url(./blocks/product/__image/_small/product__image_small.css);
+@import url(./blocks/product/__image/_active/product__image_active.css);
+
+/* Login */
+@import url(./blocks/login/__form/login__form.css);
+@import url(./blocks/login/__input/login__input.css);
+
 /* Heading Text */
 @import url(./blocks/heading-text/heading-text.css);
 

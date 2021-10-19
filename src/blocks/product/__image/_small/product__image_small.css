@@ -1,0 +1,8 @@
+.product__image_small {
+	height: 75px;
+	width: 75px;
+	margin: 5px;
+	padding: 3px;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+}

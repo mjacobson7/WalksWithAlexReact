@@ -1,0 +1,5 @@
+.product__image {
+	height: 400px;
+	width: 400px;
+	cursor: pointer;
+}

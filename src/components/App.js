@@ -11,17 +11,46 @@ import FAQ from './FAQ';
 import Login from './Login';
 import Admin from './Admin';
 import Shop from './Shop';
-import { useEffect, useState } from 'react';
 import Product from './Product';
+import Cart from './Cart';
+import { useEffect, useState } from 'react';
 
 function App() {
-	const [isAuthenticated, setIsAuthenticated] = useState(true);
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-	useEffect(() => {}, []);
+	useEffect(() => {
+		tokenCheck();
+	}, []);
+
+	const tokenCheck = () => {
+		if (localStorage.getItem('token')) {
+			const token = localStorage.getItem('token');
+			fetch('/users/me', {
+				method: 'GET',
+				headers: {
+					Accept: 'application/json',
+					'Content-Type': 'application/json',
+					Authorization: token,
+				},
+			})
+				.then((res) => res.json())
+				.then((user) => {
+					if (user) {
+						localStorage.setItem('user', JSON.stringify(user));
+						setIsLoggedIn(true);
+					}
+				});
+		}
+	};
+
+	const handleLogin = () => {
+		setIsLoggedIn(true);
+	};
 
 	return (
 		<div className='App'>
 			<Header />
+			<Cart />
 			<Switch>
 				<Route exact path='/'>
 					<Home />
@@ -44,18 +73,16 @@ function App() {
 				<Route exact path='/shop'>
 					<Shop />
 				</Route>
-				<Route exact path='/product/:id'>
+				<Route exact path='/shop/:id'>
 					<Product />
 				</Route>
 				<Route exact path='/login'>
-					<Login />
+					<Login handleLogin={handleLogin} />
 				</Route>
 				<Route
 					exact
 					path='/admin'
-					render={() =>
-						isAuthenticated ? <Admin /> : <Redirect to='/' />
-					}></Route>
+					render={() => (isLoggedIn ? <Admin /> : <Redirect to='/' />)}></Route>
 			</Switch>
 			<Footer />
 		</div>

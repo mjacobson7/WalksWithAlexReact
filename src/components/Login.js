@@ -1,7 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { ToastContainer } from 'react-toastify';
 
-const Login = () => {
+const Login = ({ handleLogin }) => {
+	const history = useHistory();
+
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
 		fetch('/login', {
@@ -14,7 +17,14 @@ const Login = () => {
 				email: e.target.email.value,
 				password: e.target.password.value,
 			}),
-		});
+		})
+			.then((res) => res.json())
+			.then((res) => {
+				localStorage.setItem('token', res.token);
+				localStorage.setItem('user', JSON.stringify(res.user));
+				handleLogin();
+				history.push('/admin');
+			});
 	};
 
 	return (
@@ -36,7 +46,7 @@ const Login = () => {
 					name='password'
 					required
 				/>
-				<button className='login__submit' type='submit'>
+				<button className='button button_color_transparent' type='submit'>
 					Log In
 				</button>
 			</form>

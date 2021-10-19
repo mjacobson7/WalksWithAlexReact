@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react';
 import { ShopContext } from '../context/ShopContext';
-import { Container, Text, Div, Row, Col } from 'atomize';
 import { Link } from 'react-router-dom';
 
 const Shop = () => {
@@ -10,28 +9,26 @@ const Shop = () => {
 		fetchAllProducts();
 	}, [fetchAllProducts]);
 
-	if (!products) return <div>Loading...</div>;
+	if (!products.length > 0) return <div>Loading...</div>;
 	return (
-		<Container>
-			<Row>
-				{products.map((product) => (
-					<Col key={product.id} size='3'>
-						<Link to={`/product/${product.id}`}>
-							<Div p='2rem'>
-								<Div
-									h='20rem'
-									bgImg={product.images[0].src}
-									bgSize='cover'
-									bgPos='center center'
-								/>
-								<Text>{product.title}</Text>
-								<Text>{product.variants[0].price}</Text>
-							</Div>
-						</Link>
-					</Col>
-				))}
-			</Row>
-		</Container>
+		<div className='shop'>
+			{products.map((product) => (
+				<Link
+					className='shop__product'
+					key={product.id}
+					to={`/shop/${product.id}`}>
+					<div p='2rem'>
+						<img
+							className='shop__product-image'
+							src={product.images[0].src}
+							alt={product.title}
+						/>
+						<p className='shop__title'>{product.title}</p>
+						<p className='shop__price'>${product.variants[0].price}</p>
+					</div>
+				</Link>
+			))}
+		</div>
 	);
 };
 

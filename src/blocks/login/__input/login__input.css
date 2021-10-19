@@ -1,0 +1,10 @@
+.login__input {
+	border: 1px solid #d3d3d3;
+	padding: 15px 5px;
+	border-radius: 5px;
+	font-family: 'WorkSans', sans-serif;
+	max-width: 400px;
+	width: 100%;
+	margin: 10px 20px;
+	font-size: 20px;
+}
