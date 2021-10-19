@@ -1,15 +1,15 @@
 .header__menu {
-	margin-right: 40px;
+	margin-right: 20px;
 }
 
 @media screen and (max-width: 1140px) {
 	.header__menu {
-		margin-right: 20px;
+		margin-right: 10px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.header__menu {
-		margin-right: 10px;
+		margin-right: 5px;
 	}
 }

@@ -79,6 +79,13 @@ const MobileHeaderMenu = () => {
 							onClick={() => setIsMenuOpen(false)}>
 							FAQ
 						</NavLink>
+						<NavLink
+							activeClassName='header__menu-item_active'
+							className='header__mobile-item'
+							to='/shop'
+							onClick={() => setIsMenuOpen(false)}>
+							Shop
+						</NavLink>
 						<a
 							href='mailto:info@walkswithalex.com'
 							target='_blank'

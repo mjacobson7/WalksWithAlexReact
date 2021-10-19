@@ -1,6 +1,6 @@
 .header__menu-item {
 	text-decoration: none;
-	padding: 11px 25px;
+	padding: 11px 20px;
 	transition: color 0.4s ease;
 	display: inline-block;
 }
@@ -8,9 +8,6 @@
 .header__menu-item:hover {
 	color: #2e612e;
 }
-
-/* active color
-color: #ff8b7b; */
 
 @media screen and (max-width: 1140px) {
 	.header__menu-item {

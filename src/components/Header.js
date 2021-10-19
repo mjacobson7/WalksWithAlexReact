@@ -68,6 +68,12 @@ const Header = () => {
 					to='/faq'>
 					FAQ
 				</NavLink>
+				<NavLink
+					className='header__menu-item paragraph-text'
+					activeClassName='header__menu-item_active'
+					to='/shop'>
+					Shop
+				</NavLink>
 				<a
 					href='mailto:info@walkswithalex.com'
 					target='_blank'
