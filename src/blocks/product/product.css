@@ -6,3 +6,9 @@
 	margin: 100px auto;
 	font-family: 'worksans', sans-serif;
 }
+
+@media screen and (max-width: 900px) {
+	.product {
+		flex-direction: column;
+	}
+}
