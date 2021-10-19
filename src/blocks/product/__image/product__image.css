@@ -1,5 +1,13 @@
 .product__image {
-	max-width: 400px;
-	width: 100%;
+	width: 400px;
+	height: 400px;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+	.product__image {
+		max-width: 400px;
+		width: 100%;
+		height: auto;
+	}
 }
