@@ -21,6 +21,7 @@
 @import url(./blocks/header/__menu/_desktop/header__menu_desktop.css);
 @import url(./blocks/header/__menu/_mobile/header__menu_mobile.css);
 @import url(./blocks/header/__menu-item/header__menu-item.css);
+@import url(./blocks/header/__cart/header__cart.css);
 @import url(./blocks/header/__menu-item/_active/header__menu-item_active.css);
 @import url(./blocks/header/__menu-icon/header__menu-icon.css);
 @import url(./blocks/header/__menu-icon/_open/header__menu-icon_open.css);
@@ -144,7 +145,25 @@
 @import url(./blocks/product/__title/product__title.css);
 @import url(./blocks/product/__image/_small/product__image_small.css);
 @import url(./blocks/product/__image/_active/product__image_active.css);
+@import url(./blocks/product/__unavailable/product__unavailable.css);
+@import url(./blocks/product/__back/product__back.css);
 
+/* Cart */
+@import url(./blocks/cart/cart.css);
+@import url(./blocks/cart/_visible/cart_visible.css);
+@import url(./blocks/cart/__contents/cart__contents.css);
+@import url(./blocks/cart/__contents/_visible/cart__contents_visible.css);
+@import url(./blocks/cart/__overlay/cart__overlay.css);
+@import url(./blocks/cart/__title/cart__title.css);
+@import url(./blocks/cart/__close/cart__close.css);
+@import url(./blocks/cart/__items/cart__items.css);
+@import url(./blocks/cart/__item/cart__item.css);
+@import url(./blocks/cart/__item-image/cart_item-image.css);
+@import url(./blocks/cart/__item-title/cart__item-title.css);
+@import url(./blocks/cart/__variant-title/cart__variant-title.css);
+@import url(./blocks/cart/__quantity/cart__quantity.css);
+@import url(./blocks/cart/__item-price/cart__item-price.css);
+@import url(./blocks/cart/__checkout/cart__checkout.css);
 /* Login */
 @import url(./blocks/login/__form/login__form.css);
 @import url(./blocks/login/__input/login__input.css);

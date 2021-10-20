@@ -3,8 +3,9 @@
 	justify-content: space-around;
 	max-width: 1000px;
 	width: calc(100% - 50px);
-	margin: 100px auto;
+	margin: 120px auto;
 	font-family: 'worksans', sans-serif;
+	position: relative;
 }
 
 @media screen and (max-width: 900px) {

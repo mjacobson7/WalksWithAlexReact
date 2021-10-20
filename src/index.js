@@ -7,6 +7,7 @@ import ScrollToTop from './utils/ScrollToTop';
 import ShopProvider from './context/ShopContext';
 import { Provider as StyletronProvider, DebugEngine } from 'styletron-react';
 import { Client as Styletron } from 'styletron-engine-atomic';
+import Cart from './components/Cart';
 
 const debug =
 	process.env.NODE_ENV === 'production' ? void 0 : new DebugEngine();
@@ -18,6 +19,7 @@ ReactDOM.render(
 		<ShopProvider>
 			<StyletronProvider value={engine} debug={debug} debugAfterHydration>
 				<BrowserRouter>
+					<Cart />
 					<ScrollToTop />
 					<App />
 				</BrowserRouter>

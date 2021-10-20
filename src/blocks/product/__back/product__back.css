@@ -1,0 +1,18 @@
+.product__back {
+	font-size: 30px;
+	color: #2e612e;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	border: 3px solid #2e612e;
+	transition: all 0.3s;
+	cursor: pointer;
+	position: absolute;
+	top: -75px;
+}
+
+.product__back:hover {
+	background-color: #2e612e;
+	color: #fff;
+	opacity: 0.6;
+}

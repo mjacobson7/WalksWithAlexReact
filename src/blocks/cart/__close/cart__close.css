@@ -1,0 +1,11 @@
+.cart__close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.cart__close:hover {
+	color: #3d3c3c;
+}

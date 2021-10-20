@@ -3,15 +3,16 @@
 	padding: 11px 20px;
 	transition: color 0.4s ease;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .header__menu-item:hover {
 	color: #2e612e;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1145px) {
 	.header__menu-item {
-		padding: 11px 15px;
+		padding: 11px 10px;
 	}
 }
 

@@ -1,0 +1,12 @@
+.header__cart {
+	color: #3a3b3d;
+	vertical-align: middle;
+	cursor: pointer;
+	padding-right: 40px;
+}
+
+@media screen and (max-width: 1145px) {
+	.header__cart {
+		padding-right: 20px;
+	}
+}

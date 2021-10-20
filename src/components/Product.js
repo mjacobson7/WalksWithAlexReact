@@ -1,11 +1,13 @@
 import React, { useEffect, useContext, useState, useCallback } from 'react';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import { ShopContext } from '../context/ShopContext';
 import Select from './Select';
-import { ToastContainer, toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Product = () => {
 	const { id } = useParams();
+	const history = useHistory();
 	const { fetchProductWithId, addItemToCheckout, product, openCart } =
 		useContext(ShopContext);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -51,15 +53,8 @@ const Product = () => {
 	};
 
 	const handleAddToCheckout = () => {
-		addItemToCheckout(product.variants[0].id, 1);
-
-		toast('Item added to cart!', {
-			position: 'top-center',
-			autoClose: 5000,
-			hideProgressBar: false,
-			progress: undefined,
-			type: 'success',
-		});
+		addItemToCheckout(selectedVariant.id, 1);
+		openCart();
 	};
 
 	if (!product.title) return <div>Loading...</div>;
@@ -67,6 +62,11 @@ const Product = () => {
 		<>
 			<div className='product'>
 				<div className='product__images'>
+					<FontAwesomeIcon
+						className='product__back'
+						icon={faArrowLeft}
+						onClick={() => history.push('/shop')}
+					/>
 					<img
 						src={product.images[currentImageIndex].src}
 						alt=''
@@ -98,18 +98,20 @@ const Product = () => {
 							label={option.name}
 							options={option}></Select>
 					))}
-					<button
-						className={`button button_color_transparent ${
-							!selectedVariant?.available ? 'button_disabled' : ''
-						}`}
-						disabled={!selectedVariant?.available}
-						onClick={handleAddToCheckout}>
-						Add To Cart
-					</button>
-					<button onClick={openCart}>Open Cart</button>
+					{selectedVariant?.available ? (
+						<button
+							className={`button button_color_transparent ${
+								!selectedVariant?.available ? 'button_disabled' : ''
+							}`}
+							disabled={!selectedVariant?.available}
+							onClick={handleAddToCheckout}>
+							Add To Cart
+						</button>
+					) : (
+						<p className='product__unavailable'>Out of Stock</p>
+					)}
 				</div>
 			</div>
-			<ToastContainer />
 		</>
 	);
 };

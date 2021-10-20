@@ -1,5 +1,8 @@
-import React from 'react';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { ShopContext } from '../context/ShopContext';
 
 import socialFacebook from '../images/social_facebook.png';
 import socialInstagram from '../images/social_instagram.png';
@@ -7,6 +10,8 @@ import socialInstagram from '../images/social_instagram.png';
 import MobileHeaderMenu from './MobileHeaderMenu';
 
 const Header = () => {
+	const { openCart } = useContext(ShopContext);
+
 	return (
 		<header className='header'>
 			<div className='header__logo-container'>
@@ -74,6 +79,11 @@ const Header = () => {
 					to='/shop'>
 					Shop
 				</NavLink>
+				<FontAwesomeIcon
+					className='header__menu-item header__cart'
+					icon={faShoppingCart}
+					onClick={openCart}
+				/>
 				<a
 					href='mailto:info@walkswithalex.com'
 					target='_blank'

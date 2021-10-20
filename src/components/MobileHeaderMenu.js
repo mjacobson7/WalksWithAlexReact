@@ -1,19 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { ShopContext } from '../context/ShopContext';
 
 const MobileHeaderMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const { openCart, isCartOpen } = useContext(ShopContext);
 
 	useEffect(() => {
-		if (isMenuOpen) {
+		if (isMenuOpen || isCartOpen) {
 			document.querySelector('html').style.overflow = 'hidden';
 		} else {
 			document.querySelector('html').style.overflow = 'auto';
 		}
-	}, [isMenuOpen]);
+	}, [isCartOpen, isMenuOpen]);
+
+	const handleCartClick = (e) => {
+		e.preventDefault();
+		openCart();
+		setIsMenuOpen(false);
+	};
 
 	return (
 		<div className='header__menu header__menu_mobile'>
@@ -85,6 +93,13 @@ const MobileHeaderMenu = () => {
 							to='/shop'
 							onClick={() => setIsMenuOpen(false)}>
 							Shop
+						</NavLink>
+						<NavLink
+							activeClassName='header__menu-item_active'
+							className='header__mobile-item'
+							to='/cart'
+							onClick={handleCartClick}>
+							Cart
 						</NavLink>
 						<a
 							href='mailto:info@walkswithalex.com'
