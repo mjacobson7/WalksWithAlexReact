@@ -14,7 +14,6 @@ class ShopProvider extends Component {
 		product: {},
 		checkout: {},
 		isCartOpen: false,
-		test: 'test',
 	};
 
 	componentDidMount() {
@@ -73,6 +72,10 @@ class ShopProvider extends Component {
 		this.setState({ product });
 	};
 
+	removeProduct = async (id) => {
+		this.setState({ product: {} });
+	};
+
 	closeCart = async () => {
 		this.setState({ isCartOpen: false });
 	};
@@ -92,6 +95,7 @@ class ShopProvider extends Component {
 					openCart: this.openCart,
 					addItemToCheckout: this.addItemToCheckout,
 					removeItemFromCheckout: this.removeItemFromCheckout,
+					removeProduct: this.removeProduct,
 				}}>
 				{this.props.children}
 			</ShopContext.Provider>

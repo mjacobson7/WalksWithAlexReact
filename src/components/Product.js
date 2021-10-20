@@ -8,16 +8,23 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const Product = () => {
 	const { id } = useParams();
 	const history = useHistory();
-	const { fetchProductWithId, addItemToCheckout, product, openCart } =
-		useContext(ShopContext);
+	const {
+		fetchProductWithId,
+		addItemToCheckout,
+		product,
+		removeProduct,
+		openCart,
+	} = useContext(ShopContext);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 	const [selectOptions, setSelectOptions] = useState(null);
 	const [selectedVariant, setSelectedVariant] = useState(null);
 
 	useEffect(() => {
 		fetchProductWithId(id);
-		return () => {};
-	}, [fetchProductWithId, id]);
+		return () => {
+			removeProduct();
+		};
+	}, [fetchProductWithId, id, removeProduct]);
 
 	const handleSelectedVariant = useCallback(
 		(selectedOptions) => {
@@ -30,7 +37,7 @@ const Product = () => {
 			console.log(selectedVariant);
 			setSelectedVariant(selectedVariant);
 		},
-		[product.variants]
+		[product?.variants]
 	);
 
 	useEffect(() => {

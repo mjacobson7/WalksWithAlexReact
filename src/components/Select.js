@@ -2,7 +2,11 @@ import React from 'react';
 
 const Select = ({ name, handleSelectChange, label, options, children }) => {
 	return (
-		<div className='select'>
+		<div
+			style={{
+				display: name === 'Title' ? 'none' : 'block',
+			}}
+			className='select'>
 			<label className='select__label'>{label}</label>
 			<select
 				className='select__select'
