@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../context/ShopContext';
-import { Div, SideDrawer, Text, Row, Col, Anchor } from 'atomize';
-import { faCross, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
