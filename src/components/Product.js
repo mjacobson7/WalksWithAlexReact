@@ -4,6 +4,7 @@ import { ShopContext } from '../context/ShopContext';
 import Select from './Select';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import Loading from './Loading';
 
 const Product = () => {
 	const { id } = useParams();
@@ -34,7 +35,6 @@ const Product = () => {
 				});
 			});
 
-			console.log(selectedVariant);
 			setSelectedVariant(selectedVariant);
 		},
 		[product?.variants]
@@ -46,7 +46,6 @@ const Product = () => {
 				prev[curr.name] = curr.values[0].value;
 				return prev;
 			}, {});
-			console.log(selectedOptionsObj);
 			setSelectOptions(selectedOptionsObj);
 			handleSelectedVariant(selectedOptionsObj);
 		}
@@ -64,7 +63,7 @@ const Product = () => {
 		openCart();
 	};
 
-	if (!product.title) return <div>Loading...</div>;
+	if (!product.title) return <Loading />;
 	return (
 		<>
 			<div className='product'>
