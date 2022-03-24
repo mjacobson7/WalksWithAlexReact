@@ -80,7 +80,7 @@ const FAQ = () => {
 					answer='Please give us 24 hours notice when canceling on any service. Last
 					minute cancellations within 24 hours are subject to a 50% charge of
 					the service. If your cancellation is less than 12 hours in advance
-					you will be fully charged.'
+					you will be fully charged. Holidays and other high demand dates may require a nonrefundable deposit'
 				/>
 			</section>
 		</main>

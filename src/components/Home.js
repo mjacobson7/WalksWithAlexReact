@@ -35,7 +35,7 @@ const Home = () => {
 		<main>
 			<section className='intro'>
 				<h1 className='intro__title heading-text'>Pet Care</h1>
-				<p className='intro__subtitle'>Walks | Boarding | Daycare</p>
+				<p className='intro__subtitle'>Walks | Boarding | Daycamp</p>
 				<a
 					href='mailto:info@walkswithalex.com'
 					className='intro__btn button button_color_yellow'>
@@ -61,7 +61,7 @@ const Home = () => {
 						<h3 className='card__title'>Walk - 30 minutes</h3>
 
 						<a
-							href='https://forms.gle/yyQpGQHzP333hJDc7'
+							href='mailto:info@walkswithalex.com'
 							target='_blank'
 							className='card__btn button button_color_yellow'
 							rel='noreferrer'>
@@ -73,7 +73,7 @@ const Home = () => {
 						<h3 className='card__title'>Walk - 60 minutes</h3>
 
 						<a
-							href='https://forms.gle/yyQpGQHzP333hJDc7'
+							href='mailto:info@walkswithalex.com'
 							target='_blank'
 							className='card__btn button button_color_yellow'
 							rel='noreferrer'>
@@ -85,7 +85,7 @@ const Home = () => {
 						<h3 className='card__title'>Boarding - Overnight</h3>
 
 						<a
-							href='https://forms.gle/yyQpGQHzP333hJDc7'
+							href='mailto:info@walkswithalex.com'
 							target='_blank'
 							className='card__btn button button_color_yellow'
 							rel='noreferrer'>

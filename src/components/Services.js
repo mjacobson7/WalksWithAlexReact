@@ -32,24 +32,18 @@ const Services = () => {
 					<ServiceItem
 						title='Boarding'
 						price='$75/night'
-						visibleText={`An in-home overnight stay made to replicate your dog's own home`}
-						hiddenText={`environment. With opportunities to socialize or have play time
-						in their own space, depending on your dog's needs. What's
-						included: Morning and evening walks with potty breaks in
-						between, social time with our dogs in a safe controlled
-						environment, daily reports and photos, custom training
-						reinforcement. (Additional dog: $30, house-sitting available
-						upon request)`}
+						visibleText={`We are restructuring our boarding program, please inquire via email for availability`}
+						hiddenText={``}
 						image={boardingImage}
 					/>
 					<ServiceItem
-						title='Daycare'
+						title='Daycamp'
 						price='$60'
-						visibleText='Similar to our overnight stays, your pup will receive multiple
-						walks, play time to'
-						hiddenText={`promote engagement with humans and other dogs, and stimulate
-						their brain and body. What's included: daycare report, photos,
-						on demand updates. (Additional dog: $30)`}
+						visibleText='Your dog will spend the day with a customized experience'
+						hiddenText={`tailored to their 
+						needs and comfort level, which includes opportunities for play time with humans and other
+						 dogs, mental and physical enrichment, and training using positive reinforcement and games.
+						  In addition you will receive a report of their experience, photos, and on demand updates.`}
 						image={daycareImage}
 					/>
 					<ServiceItem

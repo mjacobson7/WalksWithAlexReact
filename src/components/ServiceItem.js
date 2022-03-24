@@ -33,7 +33,7 @@ const ServiceItem = ({ title, price, visibleText, hiddenText, image }) => {
 				)}
 			</p>
 			<a
-				href='https://forms.gle/yyQpGQHzP333hJDc7'
+				href='mailto:info@walkswithalex.com'
 				target='_blank'
 				className='card__btn button button_color_yellow'
 				rel='noreferrer'>
