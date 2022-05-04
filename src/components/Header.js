@@ -73,12 +73,19 @@ const Header = () => {
 					to='/faq'>
 					FAQ
 				</NavLink>
-				<NavLink
+				{/* <NavLink
 					className='header__menu-item paragraph-text'
 					activeClassName='header__menu-item_active'
 					to='/shop'>
 					Shop
-				</NavLink>
+				</NavLink> */}
+				<a
+					// activeClassName='header__menu-item_active' // Won't ever be active since it currently redirects to square
+					className='header__menu-item paragraph-text'
+					// to='/shop'
+					href='https://walkswithalex.square.site/'>
+					Shop
+				</a>
 				<FontAwesomeIcon
 					className='header__menu-item header__cart'
 					icon={faShoppingCart}

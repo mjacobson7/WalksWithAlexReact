@@ -87,13 +87,14 @@ const MobileHeaderMenu = () => {
 							onClick={() => setIsMenuOpen(false)}>
 							FAQ
 						</NavLink>
-						<NavLink
-							activeClassName='header__menu-item_active'
+						<a
+							// activeClassName='header__menu-item_active' // Won't ever be active since it currently redirects to square
 							className='header__mobile-item'
-							to='/shop'
+							// to='/shop'
+							href='https://walkswithalex.square.site/'
 							onClick={() => setIsMenuOpen(false)}>
 							Shop
-						</NavLink>
+						</a>
 						<NavLink
 							activeClassName='header__menu-item_active'
 							className='header__mobile-item'
