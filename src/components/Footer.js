@@ -43,7 +43,7 @@ const Footer = () => {
 			<ul className='footer__contact-list'>
 				<li className='footer__contact-item'>
 					<p className='footer__subtitle'>Phone</p>
-					<p className='footer__text'>(818) 794-0753</p>
+					<p className='footer__text'>(818) 796-9457</p>
 				</li>
 				<li className='footer__contact-item'>
 					<p className='footer__subtitle'>Email</p>
