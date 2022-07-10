@@ -4,6 +4,9 @@ import JennyAlexImage from '../images/jenny_alex_review.png';
 import ShastaImage from '../images/shasta_review.webp';
 import StaceyJasonImage from '../images/stacey_jason_review.png';
 import ShaziImage from '../images/review_shazi.webp';
+import JasonKimImage from '../images/jason_kim_review.jpeg';
+import BethTaylorImage from '../images/beth_tyler_review.jpeg';
+import KimImage from '../images/kim_review.jpeg';
 
 const Reviews = () => {
 	return (
@@ -90,6 +93,65 @@ const Reviews = () => {
 								className='testimonials__author-image'
 							/>
 							<p className='testimonials__author-name'>Shazi</p>
+						</div>
+					</li>
+					<li className='testimonials__item'>
+						<p className='testimonials__subtitle'>"They're the best!"</p>
+						<p className='testimonials__text'>
+							Alex & Kelli are AMAZING and always do a fantastic job with
+							watching & caring for our pups! Our dogs love them and are always
+							so happy, well cared for & loved - I always give them my highest
+							recommendations! They're the best!
+						</p>
+						<div className='testimonials__author'>
+							<img
+								src={JasonKimImage}
+								alt=''
+								className='testimonials__author-image'
+							/>
+							<p className='testimonials__author-name'>Jason + Kim</p>
+						</div>
+					</li>
+					<li className='testimonials__item'>
+						<p className='testimonials__subtitle'>
+							"Thank-you for all you do!"
+						</p>
+						<p className='testimonials__text'>
+							We cannot recommend Walks with Alex enough! You can always trust
+							that your pet will be in the best of care while you're away. And
+							you'll be able to see it in the photos shared! Alex and Kelli,
+							thank-you for all you do!
+						</p>
+						<div className='testimonials__author'>
+							<img
+								src={BethTaylorImage}
+								alt=''
+								className='testimonials__author-image'
+							/>
+							<p className='testimonials__author-name'>Beth + Tyler</p>
+						</div>
+					</li>
+					<li className='testimonials__item'>
+						<p className='testimonials__subtitle'>
+							"Would recommend to everyone"
+						</p>
+						<p className='testimonials__text'>
+							Trustworthy and friendly dog boarding! My dog takes a lot of
+							medication and is on a strict prescription diet. His health issues
+							make him tough to care for, as he needs a lot of attention
+							throughout the day (more than average water, bathroom trips,
+							frequent meds/feedings). Alex and Kelli did an AMAZING job of
+							catering to him and sent frequent updates so we knew he was
+							getting the care he needs (and having fun!). Would recommend to
+							everyone, we’re sooo excited to find dog sitters we can trust
+						</p>
+						<div className='testimonials__author'>
+							<img
+								src={KimImage}
+								alt=''
+								className='testimonials__author-image'
+							/>
+							<p className='testimonials__author-name'>Kim</p>
 						</div>
 					</li>
 				</ul>
