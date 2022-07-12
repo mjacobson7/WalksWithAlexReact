@@ -13,6 +13,14 @@ const Reviews = () => {
 		<main>
 			<section className='testimonials'>
 				<h2 className='testimonials__title heading-text'>Reviews</h2>
+				<Link
+					to={{
+						pathname: 'https://g.page/walks-with-alex/review?gm',
+					}}
+					target='_blank'
+					className='card__btn button button_color_yellow'>
+					Leave a review!
+				</Link>
 				<ul className='testimonials__list'>
 					<li className='testimonials__item'>
 						<p className='testimonials__subtitle'>"Exceptional Care"</p>
@@ -155,14 +163,6 @@ const Reviews = () => {
 						</div>
 					</li>
 				</ul>
-				<Link
-					to={{
-						pathname: 'https://g.page/walks-with-alex/review?gm',
-					}}
-					target='_blank'
-					className='card__btn button button_color_yellow'>
-					Leave a review!
-				</Link>
 			</section>
 		</main>
 	);
