@@ -1,8 +1,7 @@
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ShopContext } from '../context/ShopContext';
 
 import socialFacebook from '../images/social_facebook.png';
 import socialInstagram from '../images/social_instagram.png';
@@ -10,7 +9,6 @@ import socialInstagram from '../images/social_instagram.png';
 import MobileHeaderMenu from './MobileHeaderMenu';
 
 const Header = () => {
-	const { openCart } = useContext(ShopContext);
 
 	return (
 		<header className='header'>
@@ -73,12 +71,12 @@ const Header = () => {
 					to='/faq'>
 					FAQ
 				</NavLink>
-				{/* <NavLink
+				<NavLink
 					className='header__menu-item paragraph-text'
 					activeClassName='header__menu-item_active'
 					to='/shop'>
 					Shop
-				</NavLink> */}
+				</NavLink>
 				<a
 					// activeClassName='header__menu-item_active' // Won't ever be active since it currently redirects to square
 					className='header__menu-item paragraph-text'
@@ -89,7 +87,7 @@ const Header = () => {
 				<FontAwesomeIcon
 					className='header__menu-item header__cart'
 					icon={faShoppingCart}
-					onClick={openCart}
+					// onClick={openCart}
 				/>
 				<a
 					href='mailto:info@walkswithalex.com'

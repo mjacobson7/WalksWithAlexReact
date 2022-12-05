@@ -23,7 +23,7 @@ const Services = () => {
 					/>
 					<ServiceItem
 						title='30 Minute Walk'
-						price='$20'
+						price='$25'
 						visibleText='Similar to our 60 minute walk, but with more focus on physical
 						activity'
 						hiddenText='(Additional dog: $5)'

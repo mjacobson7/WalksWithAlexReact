@@ -3,23 +3,23 @@ import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { ShopContext } from '../context/ShopContext';
 
 const MobileHeaderMenu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const { openCart, isCartOpen } = useContext(ShopContext);
 
 	useEffect(() => {
-		if (isMenuOpen || isCartOpen) {
+		// if (isMenuOpen || isCartOpen) {
+			if(isMenuOpen) {
 			document.querySelector('html').style.overflow = 'hidden';
 		} else {
 			document.querySelector('html').style.overflow = 'auto';
 		}
-	}, [isCartOpen, isMenuOpen]);
+	// }, [isCartOpen, isMenuOpen]);
+	}, []);
 
 	const handleCartClick = (e) => {
 		e.preventDefault();
-		openCart();
+		// openCart();
 		setIsMenuOpen(false);
 	};
 
@@ -95,13 +95,7 @@ const MobileHeaderMenu = () => {
 							onClick={() => setIsMenuOpen(false)}>
 							Shop
 						</a>
-						<NavLink
-							activeClassName='header__menu-item_active'
-							className='header__mobile-item'
-							to='/cart'
-							onClick={handleCartClick}>
-							Cart
-						</NavLink>
+				
 						<a
 							href='mailto:info@walkswithalex.com'
 							target='_blank'

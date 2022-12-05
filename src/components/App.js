@@ -10,9 +10,6 @@ import Rescue from './Rescue';
 import FAQ from './FAQ';
 import Login from './Login';
 import Admin from './Admin';
-import Shop from './Shop';
-import Product from './Product';
-import Cart from './Cart';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -68,12 +65,6 @@ function App() {
 				</Route>
 				<Route exact path='/faq'>
 					<FAQ />
-				</Route>
-				<Route exact path='/shop'>
-					<Shop />
-				</Route>
-				<Route exact path='/shop/:id'>
-					<Product />
 				</Route>
 				<Route exact path='/login'>
 					<Login handleLogin={handleLogin} />
