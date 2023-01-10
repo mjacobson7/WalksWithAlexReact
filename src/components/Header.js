@@ -22,14 +22,14 @@ const Header = () => {
 						href='https://www.facebook.com/DogWalksWithAlex'
 						target='_blank'
 						rel='noreferrer'>
-						<img src={socialFacebook} alt='' />
+						<img src={ socialFacebook } alt='' />
 					</a>
 					<a
 						className='header__social-link'
 						href='https://www.instagram.com/walkswithalex/'
 						target='_blank'
 						rel='noreferrer'>
-						<img src={socialInstagram} alt='' />
+						<img src={ socialInstagram } alt='' />
 					</a>
 				</div>
 			</div>
@@ -71,12 +71,6 @@ const Header = () => {
 					to='/faq'>
 					FAQ
 				</NavLink>
-				<NavLink
-					className='header__menu-item paragraph-text'
-					activeClassName='header__menu-item_active'
-					to='/shop'>
-					Shop
-				</NavLink>
 				<a
 					// activeClassName='header__menu-item_active' // Won't ever be active since it currently redirects to square
 					className='header__menu-item paragraph-text'
@@ -86,8 +80,8 @@ const Header = () => {
 				</a>
 				<FontAwesomeIcon
 					className='header__menu-item header__cart'
-					icon={faShoppingCart}
-					// onClick={openCart}
+					icon={ faShoppingCart }
+				// onClick={openCart}
 				/>
 				<a
 					href='mailto:info@walkswithalex.com'
