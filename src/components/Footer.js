@@ -1,7 +1,7 @@
 import React from 'react';
 import fearFreeImage from '../images/certification_fear_free.webp';
 import iaabcImage from '../images/certification_iaabc.webp';
-import recallerImage from '../images/certification_recaller.webp';
+import familyDogMediation from '../images/certification_family-dog-meditation_1.webp';
 import redCrossImage from '../images/certification_red_cross.webp';
 import apdtImage from '../images/certification_apdt.webp';
 import ContactForm from './ContactForm';
@@ -21,8 +21,8 @@ const Footer = () => {
 					</a>
 				</li>
 				<li>
-					<a href='https://recallers.com/' target='_blank' rel='noreferrer'>
-						<img src={recallerImage} alt='' className='certifications__image' />
+					<a href='https://www.familydogmediation.com/' target='_blank' rel='noreferrer'>
+						<img src={familyDogMediation} alt='' className='certifications__image' />
 					</a>
 				</li>
 				<li>
