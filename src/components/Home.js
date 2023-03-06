@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../images/logo.webp';
-import walk30Image from '../images/walk30.webp';
-import walk60Image from '../images/walk60.webp';
-import boardingImage from '../images/services_boarding.jpeg';
+import trainingWalk from '../images/services_training-walk.webp';
+import virtualTraining from '../images/services_virtual-training.webp';
+import virtualPlusInPerson from '../images/services_virtual-plus-in-person.webp';
 
 import JennyAlexReviewImage from '../images/jenny_alex_review.png';
 import ShastaReviewImage from '../images/shasta_review.webp';
@@ -57,8 +57,8 @@ const Home = () => {
 				<h2 className='services__title heading-text'>Popular Services</h2>
 				<ul className='cards'>
 					<li className='card'>
-						<img src={walk30Image} alt='' className='card__img' />
-						<h3 className='card__title'>Walk - 30 minutes</h3>
+						<img src={trainingWalk} alt='' className='card__img' />
+						<h3 className='card__title'>Training Walk</h3>
 
 						<a
 							href='mailto:info@walkswithalex.com'
@@ -69,8 +69,8 @@ const Home = () => {
 						</a>
 					</li>
 					<li className='card'>
-						<img src={walk60Image} alt='' className='card__img' />
-						<h3 className='card__title'>Walk - 60 minutes</h3>
+						<img src={virtualTraining} alt='' className='card__img' />
+						<h3 className='card__title'>Virtual Training</h3>
 
 						<a
 							href='mailto:info@walkswithalex.com'
@@ -81,8 +81,8 @@ const Home = () => {
 						</a>
 					</li>
 					<li className='card'>
-						<img src={boardingImage} alt='' className='card__img' />
-						<h3 className='card__title'>Boarding - Overnight</h3>
+						<img src={virtualPlusInPerson} alt='' className='card__img' />
+						<h3 className='card__title'>Virtual Training Assessment + In-Person Training Session</h3>
 
 						<a
 							href='mailto:info@walkswithalex.com'

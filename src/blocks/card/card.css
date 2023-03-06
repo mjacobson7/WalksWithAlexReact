@@ -8,6 +8,11 @@
 	margin: 60px 30px;
 }
 
+.card__list-item {
+	list-style: disc;
+	text-align: start;
+}
+
 @media screen and (max-width: 600px) {
 	.card {
 		margin: 50px 30px;
