@@ -8,6 +8,7 @@ import Services from './Services';
 import Reviews from './Reviews';
 import Rescue from './Rescue';
 import FAQ from './FAQ';
+import Welcome from './Welcome';
 import Login from './Login';
 import Admin from './Admin';
 import { useEffect, useState } from 'react';
@@ -65,6 +66,9 @@ function App() {
 				</Route>
 				<Route exact path='/faq'>
 					<FAQ />
+				</Route>
+				<Route exact path='/welcome'>
+					<Welcome />
 				</Route>
 				<Route exact path='/login'>
 					<Login handleLogin={handleLogin} />

@@ -16,32 +16,6 @@ const Services = () => {
         <h2 className="services__title heading-text">Services</h2>
         <ul className="cards">
           <ServiceItem
-            title="Walks"
-            price="Please email to be added to waitlist"
-            visibleText="A customized experience for your dog to keep them physically and"
-            hiddenText={`mentally engaged. What's included: a recap of our adventure,
-								action photo, and an activity report. (Additional dog: $10)`}
-            image={walk30Image}
-          />
-          <ServiceItem
-            title="Daycamp"
-            price="Please email to be added to waitlist"
-            visibleText="Your dog will spend the day with a customized experience"
-            hiddenText={`tailored to their 
-						needs and comfort level, which includes opportunities for play time with humans and other
-						 dogs, mental and physical enrichment, and training using positive reinforcement and games.
-						  In addition you will receive a report of their experience, photos, and on demand updates.`}
-            image={daycareImage}
-          />
-          <ServiceItem
-            title="Photography"
-            price="$250"
-            visibleText="A custom photoshoot in the studio or at an outdoor location with
-						5-10"
-            hiddenText="portraits of your pet to choose from."
-            image={photographyImage}
-          />
-          <ServiceItem
             title="Virtual Training Session"
             price="$75"
             visibleText={[
@@ -101,6 +75,32 @@ const Services = () => {
             price="#TBD"
             visibleText="Coming Soon!"
             image={trainingImage}
+          />
+          <ServiceItem
+            title="Walks"
+            price="Please email to be added to waitlist"
+            visibleText="A customized experience for your dog to keep them physically and"
+            hiddenText={`mentally engaged. What's included: a recap of our adventure,
+								action photo, and an activity report. (Additional dog: $10)`}
+            image={walk30Image}
+          />
+          <ServiceItem
+            title="Daycamp"
+            price="Please email to be added to waitlist"
+            visibleText="Your dog will spend the day with a customized experience"
+            hiddenText={`tailored to their 
+						needs and comfort level, which includes opportunities for play time with humans and other
+						 dogs, mental and physical enrichment, and training using positive reinforcement and games.
+						  In addition you will receive a report of their experience, photos, and on demand updates.`}
+            image={daycareImage}
+          />
+          <ServiceItem
+            title="Photography"
+            price="$250"
+            visibleText="A custom photoshoot in the studio or at an outdoor location with
+						5-10"
+            hiddenText="portraits of your pet to choose from."
+            image={photographyImage}
           />
         </ul>
       </section>
