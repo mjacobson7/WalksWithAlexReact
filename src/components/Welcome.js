@@ -4,7 +4,7 @@ const Welcome = () => {
   return (
     <main className="page">
       <h2 className="heading-text" style={{ textAlign: "center", marginTop: '40px' }}>
-        Welcome to Walks WIth Alex!
+        Welcome to Walks With Alex!
       </h2>
       <section
         style={{
