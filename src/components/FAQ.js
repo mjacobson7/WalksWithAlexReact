@@ -13,7 +13,7 @@ const FAQ = () => {
 							Please fill out this super easy{' '}
 							<a
 								target='_blank'
-								href='https://docs.google.com/forms/d/e/1FAIpQLScq92XCzo0zJNRYaXeqkxcS7WhfVZoAVBI9fbQZl_LqT_743A/viewform'
+								href='https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true'
 								rel='noreferrer'>
 								form
 							</a>{' '}

@@ -19,26 +19,64 @@ const Services = () => {
             title="Virtual Training Session"
             price="$75"
             visibleText={[
-              "A pre-assessment questionnaire to get to know you and your dog",
+              "A pre-assessment questionnaire to learn more about you and your dog's goals",
               "Review of video examples of your dog’s behavior",
             ]}
             hiddenText={[
               "1 hour discussion and virtual training with your dog",
-              "Follow up email with a training plan and homework",
-              "Package: 3 Virtual training sessions: $200",
+              "A detailed training program customized specifically for your dog",
+              "1 week of continued support via phone/email",
             ]}
             image={virtualTraining}
           />
-          <ServiceItem
-            title="In-Person Training Session"
-            price="$175"
+          {/* <ServiceItem
+            title="3 Virtual Training Sessions"
+            price="$200"
             visibleText={[
-              "A pre-assessment questionnaire to get to know you and your dog",
-              "1 hour training with your dog",
+              "A pre-assessment questionnaire to learn more about you and your dog's goals",
+              "Review of video examples of your dog’s behavior",
+              "1 hour discussion and virtual training with your dog",
+              "A detailed training program customized specifically for your dog",
+            ]}
+            hiddenText={["6 weeks of continued support via phone/email"]}
+            image={virtualTraining}
+          /> */}
+          {/* <ServiceItem
+            title="Virtual Training Assessment + In-Person training Session"
+            price="$250"
+            visibleText={[
+              "Virtual Assessment",
+              [
+                "Review of video examples of your dog’s behavior",
+                "1 hour discussion and virtual training with your dog",
+                "A detailed training program customized specifically for your dog",
+              ],
             ]}
             hiddenText={[
-              "Follow up email with a training plan and homework",
-              "Package: 3 In person training sessions: $500",
+              "In-person",
+              [
+                "60-90 minute session",
+                "Assess your progress so far",
+                "Fine tune your custom training program",
+                "Intensive hands-on guidance to ensure you are able to enact your training program",
+                "A digital folder containing handouts, videos, progress reports, and homework",
+                "3 weeks of continued support via phone/email",
+              ],
+            ]}
+            image={inPersonTraining}
+          /> */}
+          <ServiceItem
+            title="In-Person Training Session"
+            price="$150"
+            visibleText={[
+              "60-90 minute session",
+              "Assess your progress so far",
+              "Fine tune your custom training program",
+            ]}
+            hiddenText={[
+              "Intensive hands-on guidance to ensure you are able to enact your training program",
+              "A digital folder containing handouts, videos, progress reports, and homework",
+              "2 weeks of continued support via phone/email",
             ]}
             image={inPersonTraining}
           />
@@ -55,21 +93,56 @@ const Services = () => {
             ]}
             image={trainingWalk}
           />
-          <ServiceItem
-            title="Virtual Training Assessment + In-Person training Session"
-            price="$200"
+          {/* <ServiceItem
+            title="Virtual Training Assessment + 3 In-Person training Sessions"
+            price="$400"
             visibleText={[
-              "A pre-assessment questionnaire to get to know you and your dog",
+              "Virtual Assessment",
+              [
+                "A pre-assessment questionnaire to learn more about you and your dog's goals",
+                "Review of video examples of your dog’s behavior",
+                "1 hour discussion and virtual training with your dog",
+                "A detailed training program customized specifically for your dog",
+              ],
             ]}
             hiddenText={[
-              "Review of video examples of your dog’s behavior",
-              "1 hour virtual assessment",
-              "Follow up email with a training plan and homework",
-              "1 hour in person training session",
-              "Package: 3 In person training sessions: $500",
+              "In-person",
+              [
+                "60-90 minute session",
+                "Assess your progress so far",
+                "Fine tune your custom training program",
+                "Intensive hands-on guidance to ensure you are able to enact your training program",
+              ],
+              "A digital folder containing handouts, videos, progress reports, and homework",
+              "6 weeks of continued support via phone/email",
             ]}
             image={virtualPlusInPerson}
-          />
+          /> */}
+          {/* <ServiceItem
+            title="Virtual Training Assessment + 5 In-Person training Sessions"
+            price="$600"
+            visibleText={[
+              "Virtual Assessment",
+              [
+                "A pre-assessment questionnaire to learn more about you and your dog's goals",
+                "Review of video examples of your dog’s behavior",
+                "1 hour discussion and virtual training with your dog",
+                "A detailed training program customized specifically for your dog",
+              ],
+            ]}
+            hiddenText={[
+              "In-person",
+              [
+                "60-90 minute session",
+                "Assess your progress so far",
+                "Fine tune your custom training program",
+                "Intensive hands-on guidance to ensure you are able to enact your training program",
+              ],
+              "A digital folder containing handouts, videos, progress reports, and homework",
+              "8 weeks of continued support via phone/email",
+            ]}
+            image={virtualPlusInPerson}
+          /> */}
           <ServiceItem
             title="Group Classes"
             price="#TBD"

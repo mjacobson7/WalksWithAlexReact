@@ -3,7 +3,14 @@
 	list-style-type: none;
 	display: flex;
 	justify-content: space-around;
-	max-width: 900px;
+	max-width: 1200px;
 	margin: 0 auto;
 	flex-wrap: wrap;
+}
+
+
+.certifications__link {
+	display: flex;
+	align-items: center;
+	height: 100%;
 }

@@ -45,7 +45,7 @@ const Header = () => {
 					className='header__menu-item paragraph-text'
 					activeClassName='header__menu-item_active'
 					to='/about'>
-					About
+					About Us
 				</NavLink>
 				<NavLink
 					className='header__menu-item paragraph-text'

@@ -1,5 +1,5 @@
 .certifications__image {
-	width: 100px;
-	height: 100px;
+	max-width: 130px;
+	height: auto;
 	margin: 10px;
 }

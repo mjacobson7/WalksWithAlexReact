@@ -35,7 +35,7 @@ const Welcome = () => {
           To schedule a virtual consultation, please click{" "}
           <a
             className="card__link"
-            href="https://calendly.com/walkswithalex/behavior-consultation"
+            href="https://calendly.com/thegratefuldog/behavior-consultation"
             target="_blank"
           >
             this link
@@ -65,10 +65,10 @@ const Welcome = () => {
           Please download the{" "}
           <a
             className="card__link"
-            href="https://hi.volley.app/talktome?tk=hkbMLRKMqeuNk7uTMrEnz4-tk"
+            href="https://www.marcopolo.me/download/"
             target="_blank"
           >
-            Volley App
+            Marco Polo App
           </a>
           . The app makes it easy for us to stay in touch with each other,
           exchange videos of your dog's behavior, and allows us to collaborate

@@ -13,7 +13,15 @@ const ServiceItem = ({ title, price, visibleText, hiddenText, image }) => {
           ? visibleText.map((text, index) => {
               return (
                 <ul key={index}>
-                  <li className="card__list-item">{text}</li>
+                  {Array.isArray(text) ? (
+                    text.map((item, itemIndex) => (
+                      <ul key={itemIndex}>
+                        <li className="card__list-item">{item}</li>
+                      </ul>
+                    ))
+                  ) : (
+                    <li className="card__list-item">{text}</li>
+                  )}
                 </ul>
               );
             })
@@ -31,16 +39,29 @@ const ServiceItem = ({ title, price, visibleText, hiddenText, image }) => {
         )}
         {showHiddenText && (
           <span className="card__read-more">
-            {Array.isArray(hiddenText)
-              ? hiddenText.map((text, index) => {
+            <ul>
+              {Array.isArray(hiddenText) ? (
+                hiddenText.map((text, index) => {
                   return (
-                    <ul key={index}>
-                      <li className="card__list-item">{text}</li>
-                    </ul>
+                    <li key={index} style={{ listStyle: "none" }}>
+                      {Array.isArray(text) ? (
+                        <ul>
+                          {text.map((item, itemIndex) => (
+                            <li key={itemIndex} className="card__list-item">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <li className="card__list-item">{text}</li>
+                      )}
+                    </li>
                   );
                 })
-              : hiddenText}
-
+              ) : (
+                <li className="card__list-item">{hiddenText}</li>
+              )}
+            </ul>
             <button
               className="card__link"
               onClick={() => setshowHiddenText(false)}
@@ -51,7 +72,7 @@ const ServiceItem = ({ title, price, visibleText, hiddenText, image }) => {
         )}
       </span>
       <a
-        href="mailto:info@walkswithalex.com"
+        href="https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true"
         target="_blank"
         className="card__btn button button_color_yellow"
         rel="noreferrer"
