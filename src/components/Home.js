@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../images/GratefulDog.webp";
-import trainingWalk from "../images/services_training-walk.webp";
-import virtualTraining from "../images/services_virtual-training.webp";
 import virtualPlusInPerson from "../images/services_virtual-plus-in-person.webp";
+
+import virtualTraining from "../images/virtual-training.webp";
+import inPersonTraining from "../images/in-person-training.webp";
+import trainingWalk from "../images/training-walk.webp";
 
 import JennyAlexReviewImage from "../images/jenny_alex_review.png";
 import ShastaReviewImage from "../images/shasta_review.webp";
@@ -77,7 +79,7 @@ const Home = () => {
           </li>
           <li className="card">
             <img src={virtualTraining} alt="" className="card__img" />
-            <h3 className="card__title">Virtual Training</h3>
+            <h3 className="card__title">Virtual Training Session</h3>
 
             <a
               href="https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true"
@@ -89,9 +91,9 @@ const Home = () => {
             </a>
           </li>
           <li className="card">
-            <img src={virtualPlusInPerson} alt="" className="card__img" />
+            <img src={inPersonTraining} alt="" className="card__img" />
             <h3 className="card__title">
-              Virtual Training Assessment + In-Person Training Session
+              In-Person Training Session
             </h3>
 
             <a

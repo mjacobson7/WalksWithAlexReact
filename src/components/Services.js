@@ -1,14 +1,13 @@
 import React from "react";
-import photographyImage from "../images/services_pet-photography.jpeg";
 import ServiceItem from "./ServiceItem";
 
-import addOnInPerson from "../images/add-on-in-person.webp";
+// import addOnInPerson from "../images/add-on-in-person.webp";
 import daycamp from "../images/daycamp.webp";
 import groupClass from "../images/group-class.webp";
 import inPersonTraining from "../images/in-person-training.webp";
-import photography from "../images/photography.webp";
 import trainingWalk from "../images/training-walk.webp";
-import victor from "../images/victor.webp";
+import photography from "../images/photography.webp";
+// import victor from "../images/victor.webp";
 import virtualTraining from "../images/virtual-training.webp";
 import walks from "../images/walks.webp";
 
