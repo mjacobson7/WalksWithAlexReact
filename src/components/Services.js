@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceItem from "./ServiceItem";
 
-// import addOnInPerson from "../images/add-on-in-person.webp";
+import addOnInPerson from "../images/add-on-in-person.webp";
 import daycamp from "../images/daycamp.webp";
 import groupClass from "../images/group-class.webp";
 import inPersonTraining from "../images/in-person-training.webp";
@@ -43,7 +43,7 @@ const Services = () => {
             hiddenText={["6 weeks of continued support via phone/email"]}
             image={virtualTraining}
           /> */}
-          {/* <ServiceItem
+          <ServiceItem
             title="Virtual Training Assessment + In-Person training Session"
             price="$250"
             visibleText={[
@@ -65,8 +65,8 @@ const Services = () => {
                 "3 weeks of continued support via phone/email",
               ],
             ]}
-            image={inPersonTraining}
-          /> */}
+            image={addOnInPerson}
+          />
           <ServiceItem
             title="In-Person Training Session"
             price="$150"
