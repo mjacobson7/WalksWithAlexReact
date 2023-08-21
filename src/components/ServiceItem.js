@@ -72,7 +72,7 @@ const ServiceItem = ({ title, price, visibleText, hiddenText, image }) => {
         )}
       </span>
       <a
-        href="https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true"
+        href="https://forms.gle/yVTNKHcTor9nAawK8"
         target="_blank"
         className="card__btn button button_color_yellow"
         rel="noreferrer"

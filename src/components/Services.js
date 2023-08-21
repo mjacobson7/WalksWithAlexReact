@@ -16,18 +16,21 @@ const Services = () => {
     <main>
       <section className="services">
         <h2 className="services__title heading-text">Services</h2>
+        <p style={{ color: '#3a3b3d', fontSize: '24px', maxWidth: '800px', width: '100%', textAlign: 'center' }}>All training programs begin with a behavioral consultation.  Click on the service you are interested in to get started!</p>
         <ul className="cards">
           <ServiceItem
-            title="Virtual Training Session"
+            title="Virtual Behavior Consultation"
             price="$75"
             visibleText={[
-              "A pre-assessment questionnaire to learn more about you and your dog's goals",
-              "Review of video examples of your dog’s behavior",
+              "Prerequisite: Behavior Consultation",
+              "All training programs start here!",
+              "A pre-assessment questionnaire to learn more about you and your dog's goals"
             ]}
             hiddenText={[
-              "1 hour discussion and virtual training with your dog",
-              "A detailed training program customized specifically for your dog",
-              "1 week of continued support via phone/email",
+              "Review of video examples of your dog’s behavior",
+              "30-60 minute discussion on your dog's history and information about our training approach",
+              "A detailed training program and assessment strategy customized specifically for your dog",
+              "Action items you can utilize immediately to prepare for our first session"
             ]}
             image={virtualTraining}
           />
@@ -43,7 +46,7 @@ const Services = () => {
             hiddenText={["6 weeks of continued support via phone/email"]}
             image={virtualTraining}
           /> */}
-          <ServiceItem
+          {/* <ServiceItem
             title="Virtual Training Assessment + In-Person training Session"
             price="$250"
             visibleText={[
@@ -66,11 +69,12 @@ const Services = () => {
               ],
             ]}
             image={addOnInPerson}
-          />
+          /> */}
           <ServiceItem
             title="In-Person Training Session"
             price="$150"
             visibleText={[
+              "Prerequisite: Behavior Consultation",
               "60-90 minute session",
               "Assess your progress so far",
               "Fine tune your custom training program",
@@ -86,6 +90,7 @@ const Services = () => {
             title="Training Walk"
             price="$100"
             visibleText={[
+              "Prerequisite: Behavior Consultation",
               "Work on loose leash walking",
               "Training tools to work on skills necessary for an enjoyable walk for you and your dog",
             ]}

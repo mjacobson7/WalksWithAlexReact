@@ -62,14 +62,14 @@ const Home = () => {
         </p>
       </section>
       <section className="services">
-        <h2 className="services__title heading-text">Popular Services</h2>
+        <h2 className="services__title heading-text">Book a behavior consultation!</h2>
         <ul className="cards">
           <li className="card">
             <img src={trainingWalk} alt="" className="card__img" />
             <h3 className="card__title">Training Walk</h3>
 
             <a
-              href="https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true"
+              href="https://forms.gle/yVTNKHcTor9nAawK8"
               target="_blank"
               className="card__btn button button_color_yellow"
               rel="noreferrer"
@@ -82,7 +82,7 @@ const Home = () => {
             <h3 className="card__title">Virtual Training Session</h3>
 
             <a
-              href="https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true"
+              href="https://forms.gle/yVTNKHcTor9nAawK8"
               target="_blank"
               className="card__btn button button_color_yellow"
               rel="noreferrer"
@@ -97,7 +97,7 @@ const Home = () => {
             </h3>
 
             <a
-              href="https://docs.google.com/forms/d/18Vb4pprKGOp0tzjPbqXrQKEKiwOME8GKT5vKSo4MkdY/viewform?edit_requested=true"
+              href="https://forms.gle/yVTNKHcTor9nAawK8"
               target="_blank"
               className="card__btn button button_color_yellow"
               rel="noreferrer"
