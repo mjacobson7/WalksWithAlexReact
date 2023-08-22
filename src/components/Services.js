@@ -7,7 +7,7 @@ import groupClass from "../images/group-class.webp";
 import inPersonTraining from "../images/in-person-training.webp";
 import trainingWalk from "../images/training-walk.webp";
 import photography from "../images/photography.webp";
-// import victor from "../images/victor.webp";
+import victor from "../images/victor.webp";
 import virtualTraining from "../images/virtual-training.webp";
 import walks from "../images/walks.webp";
 
@@ -19,20 +19,35 @@ const Services = () => {
         <p style={{ color: '#3a3b3d', fontSize: '24px', maxWidth: '800px', width: '100%', textAlign: 'center' }}>All training programs begin with a behavioral consultation.  Click on the service you are interested in to get started!</p>
         <ul className="cards">
           <ServiceItem
-            title="Virtual Behavior Consultation"
+            title="Virtual Training Session"
             price="$75"
             visibleText={[
               "Prerequisite: Behavior Consultation",
-              "All training programs start here!",
-              "A pre-assessment questionnaire to learn more about you and your dog's goals"
+              "60-90 minute session",
+              "Assess your progress so far",
+              "Fine tune your custom training program",
             ]}
             hiddenText={[
+              "Intensive hands-on guidance to ensure you are able to enact your training program",
+              "A digital folder containing handouts, videos, progress reports, and homework",
+              "2 weeks of continued support via phone/email",
+            ]}
+            image={virtualTraining}
+          />
+          <ServiceItem
+            title="Behavior Consultation"
+            price="$75"
+            visibleText={[
+              "All training programs start here!",
+              "A pre-assessment questionnaire to learn more about you and your dog's goals",
               "Review of video examples of your dog’s behavior",
+            ]}
+            hiddenText={[
               "30-60 minute discussion on your dog's history and information about our training approach",
               "A detailed training program and assessment strategy customized specifically for your dog",
               "Action items you can utilize immediately to prepare for our first session"
             ]}
-            image={virtualTraining}
+            image={victor}
           />
           {/* <ServiceItem
             title="3 Virtual Training Sessions"
