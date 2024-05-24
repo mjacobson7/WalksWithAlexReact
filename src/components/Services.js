@@ -20,7 +20,7 @@ const Services = () => {
         <ul className="cards">
           <ServiceItem
             title="Virtual Training Session"
-            price="$75"
+            price="$150"
             visibleText={[
               "Prerequisite: Behavior Consultation",
               "60-90 minute session",
@@ -36,7 +36,7 @@ const Services = () => {
           />
           <ServiceItem
             title="Behavior Consultation"
-            price="$75"
+            price="$150"
             visibleText={[
               "All training programs start here!",
               "A pre-assessment questionnaire to learn more about you and your dog's goals",
